@@ -1,0 +1,25 @@
+Metadata-Version: 1.1
+Name: liac-arff
+Version: 2.1.1.dev0
+Summary: A module for read and write ARFF files in Python.
+Home-page: https://github.com/renatopp/liac-arff
+Author: Renato de Pontes Pereira, Matthias Feurer
+Author-email: renato.ppontes@gmail.com, feurerm@informatik.uni-freiburg.de
+License: MIT License
+Download-URL: https://github.com/renatopp/liac-arff
+Description: UNKNOWN
+Keywords: arff weka parser liac python
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: MacOS X
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Environment :: X11 Applications
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence

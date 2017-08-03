@@ -1,0 +1,14 @@
+[server]
+version = v0.1
+debug = True
+server_ip =
+server_port =
+
+[db]
+db_ip =
+db_port = 27017
+db_base =
+
+[app]
+apk_build_dir =
+app_server = 0.0.0.0:3004

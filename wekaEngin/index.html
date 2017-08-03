@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html ng-app="MLaaS">
+<head lang="en">
+    <meta charset="UTF-8">
+    <link type="image/x-icon" href="/img/MLaaS.png" rel="shortcut icon"/>
+    <title>Data Sources | MLaaS</title>
+    <link href="vendor/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="vendor/dataTables/css/jquery.dataTables.css" rel="stylesheet" type="text/css"/>
+    <link href="vendor/tipsy/tipsy.css" rel="stylesheet" type="text/css"/>
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    <link href="css/header.css" rel="stylesheet" type="text/css"/>
+    <link href="css/dataset.css" rel="stylesheet" type="text/css"/>
+    <link href="css/filetype.css" rel="stylesheet" type="text/css"/>
+    <link href="css/menu.css" rel="stylesheet" type="text/css"/>
+    <link href="css/icon.css" rel="stylesheet" type="text/css"/>
+    <link href="css/login.css" rel="stylesheet" type="text/css"/>
+</head>
+<body ng-controller="mainController" ng-cloak>
+        <div class="wrapper">
+            <div class="navbar navbar-static-top" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="/sources.html" original-title=""><img src="/img/logo_menu.png"  style="width:50px"></a>
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav navbar-left">
+                             <li class=""><div style="font-size:35px ;  color: #3a4f5a;  padding-bottom: 18px;  padding-top: 25px;">MLaaS</span></div>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                              <li class=""><span class="dropdown" dropdown on-toggle="toggled(open)">
+                                  <a href class="dropdown-toggle" dropdown-toggle>{{username}}</a>
+                                  <ul class="dropdown-menu" >
+                                      <li><a href="#login">logout</a></li>
+                                  </ul>
+                              </span>
+                            <li class="login dashboard"><a href >Intel lab</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="content">
+                <div class="bg_dotted">
+                    <div class="grid_12">
+                        <div class="tab_menu" ng-show="username">
+                            <div id="test-mode" class="mode-ribbon off "></div>
+                            <ul class="tabs">
+                                <li><a href="#sources" ng-class="{sel:module=='sources'}" ng-click="module='sources'" original-title="">Sources</a></li>
+                                <li><a href="#datasets" ng-class="{sel:module=='datasets'}" ng-click="module='datasets'" original-title="">Datasets</a></li>
+                                <li><a href="#models" ng-class="{sel:module=='models'}" ng-click="module='models'" original-title="">Classifiers</a></li>
+                                <li><a href="#clusters" ng-class="{sel:module=='clusters'}" ng-click="module='clusters'" original-title="">Clusterers</a></li>
+                                <li><a href="#apps" ng-class="{sel:module=='apps'}" ng-click="module='apps'" original-title="">Apps</a></li>
+                            </ul>
+                        </div>
+                        <div ng-view id="{{module}}_wrapper"></div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="back request-progress" style="display: none"></div>
+            <div class="request-progress" id="sending">Sending Request...</div>
+            <div id="footer"></div>
+        </div>
+            <script type="text/javascript" src="/vendor/sugar.min.js"></script>
+            <script type="text/javascript" src="/vendor/jquery-1.11.1.js"></script>
+            <script type="text/javascript" src="/vendor/tipsy/tipsy.js"></script>
+            <script type="text/javascript" src="/vendor/strextend.js"></script>
+            <script type="text/javascript" src="/vendor/bootstrap.min.js"></script>
+            <script type="text/javascript" src="/vendor/angular.min.js"></script>
+            <script type="text/javascript" src="/vendor/angular-cookies.min.js"></script>
+            <script type="text/javascript" src="/vendor/ui-bootstrap-tpls-0.12.0.min.js"></script>
+            <script type="text/javascript" src="/vendor/angular-route.min.js"></script>
+            <script type="text/javascript" src="/vendor/ajaxfileupload.js"></script>
+
+            <script type="text/javascript" src="/vendor/d3/lodash.js"></script>
+            <script type="text/javascript" src="/vendor/d3/dagre.min.js"></script>
+            <script type="text/javascript" src="/vendor/d3/dagre-d3.min.js"></script>
+            <script type="text/javascript" src="/vendor/d3/d3.min.js"></script>
+
+            <script type="text/javascript" src="/js/event.js" ></script>
+
+            <script type="text/javascript" src="/js/controller/mainController.js"></script>
+            <script type="text/javascript" src="/js/controller/loginController.js"></script>
+            <script type="text/javascript" src="/js/controller/sourcesController.js"></script>
+            <script type="text/javascript" src="/js/controller/sourceController.js"></script>
+            <script type="text/javascript" src="/js/controller/datasetsController.js"></script>
+            <script type="text/javascript" src="/js/controller/datasetController.js"></script>
+            <script type="text/javascript" src="/js/controller/modelsController.js"></script>
+            <script type="text/javascript" src="/js/controller/modelController.js"></script>
+            <script type="text/javascript" src="/js/controller/clustersController.js"></script>
+            <script type="text/javascript" src="/js/controller/clusterController.js"></script>
+            <script type="text/javascript" src="/js/controller/appsController.js"></script>
+            <script type="text/javascript" src="/js/controller/batchpredictionController.js"></script>
+             <script type="text/javascript" src="/js/services/directive.js"></script>
+
+</body>
+</html>

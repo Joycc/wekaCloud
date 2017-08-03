@@ -1,0 +1,72 @@
+@RELATION message
+
+@ATTRIBUTE logistics {none, light, normal, heavy}
+@ATTRIBUTE walking {true, false}
+@ATTRIBUTE emailing_level {none, light, normal, heavy}
+@ATTRIBUTE testing {none, light, normal, heavy, severe}
+@ATTRIBUTE lunch_level {none, early, normal, delay}
+@ATTRIBUTE reading_level {none, light, normal, heavy}
+@ATTRIBUTE arrive_office {true, false}
+@ATTRIBUTE working {none, light, normal, heavy, severe}
+@ATTRIBUTE contacts {none, light, normal, heavy}
+@ATTRIBUTE camera {none, light, normal, heavy}
+@ATTRIBUTE music {none, light, normal, heavy, severe}
+@ATTRIBUTE internet {true, false}
+@ATTRIBUTE resting {true, false}
+@ATTRIBUTE business {none, light, normal, heavy}
+@ATTRIBUTE coding {true, false}
+@ATTRIBUTE chatting_level {none, light, normal, heavy}
+@ATTRIBUTE leave_office {true, false}
+@ATTRIBUTE experimenting {true, false}
+@ATTRIBUTE meeting_level {none, light, normal, heavy, severe}
+@ATTRIBUTE others {none, light, normal, heavy}
+@ATTRIBUTE drinking {none, few, several, many}
+@ATTRIBUTE documenting_level {none, light, normal, heavy}
+@ATTRIBUTE discussing_level {none, light, normal, heavy}
+@ATTRIBUTE playing {none, light, normal, heavy}
+@ATTRIBUTE printing {none, light, normal, heavy, severe}
+@ATTRIBUTE wechating {none, light, normal, heavy, severe}
+@ATTRIBUTE designing {true, false}
+@ATTRIBUTE message {none, light, normal, heavy}
+
+@DATA
+none,false,none,none,normal,none,true,light,none,none,none,false,false,none,false,none,true,false,light,none,many,none,none,none,none,none,false,none
+none,false,none,none,none,none,false,none,none,light,none,false,false,none,false,none,false,false,none,heavy,none,none,none,none,none,none,false,none
+none,false,none,none,none,none,false,none,none,light,none,false,false,none,false,none,false,false,none,heavy,none,none,none,none,none,none,false,light
+none,false,none,none,none,none,false,none,none,none,none,false,false,none,false,none,false,false,none,normal,none,none,none,none,none,none,false,none
+none,false,none,none,none,none,false,none,none,light,none,false,false,light,false,none,false,false,none,heavy,none,none,none,none,none,none,false,light
+none,false,none,none,none,none,false,none,none,none,none,false,false,none,false,none,false,false,none,heavy,none,none,none,none,none,none,false,none
+none,false,none,none,none,none,false,none,none,none,none,false,false,none,false,none,false,false,none,heavy,none,none,none,none,none,none,false,light
+none,false,none,none,none,none,false,none,none,none,none,false,false,none,false,none,false,false,none,heavy,none,none,none,none,none,none,false,light
+none,false,none,none,none,none,false,none,none,light,none,false,false,none,false,none,false,false,none,heavy,none,none,none,none,none,none,false,light
+none,false,none,light,normal,none,true,none,none,none,normal,false,false,none,false,none,false,false,none,heavy,few,none,none,none,none,none,false,light
+light,false,none,severe,normal,none,true,severe,none,none,severe,false,false,none,false,none,false,true,severe,heavy,many,none,none,none,none,none,false,heavy
+none,false,none,severe,normal,none,true,severe,none,light,severe,false,false,none,false,none,true,true,severe,heavy,many,none,none,none,none,none,false,heavy
+none,false,none,severe,normal,none,true,normal,none,none,normal,false,false,none,false,none,true,true,light,heavy,many,none,none,none,none,none,false,none
+none,false,none,light,normal,none,true,normal,none,none,none,false,false,none,false,none,false,true,light,heavy,many,none,none,none,none,none,false,none
+none,false,none,severe,none,none,true,light,none,none,normal,false,false,none,false,none,false,true,severe,heavy,several,none,none,none,none,none,false,heavy
+light,false,none,severe,normal,none,true,severe,none,none,severe,false,false,none,false,none,true,true,severe,heavy,many,none,none,none,none,none,false,heavy
+none,false,none,severe,normal,none,true,normal,none,heavy,severe,false,false,none,false,none,true,true,heavy,heavy,many,none,none,none,none,none,false,heavy
+none,false,none,light,none,none,true,none,none,none,normal,false,false,none,false,none,false,false,severe,heavy,none,none,none,none,none,none,false,none
+none,false,none,light,none,none,true,light,none,none,none,false,false,none,false,none,false,false,severe,heavy,none,none,none,none,none,none,false,light
+none,false,none,normal,none,none,true,heavy,none,light,none,false,false,none,false,none,true,false,none,heavy,none,none,none,none,none,none,false,normal
+none,false,none,light,none,none,true,severe,none,none,none,false,false,none,false,none,false,false,normal,heavy,none,none,none,none,none,none,false,none
+none,false,none,light,none,none,true,severe,none,none,none,false,false,none,false,none,false,false,severe,heavy,none,none,none,none,none,none,false,light
+none,false,none,normal,none,none,true,heavy,none,normal,light,false,false,normal,false,none,true,true,severe,heavy,several,none,none,heavy,none,severe,false,light
+light,false,none,normal,normal,none,true,severe,none,light,heavy,false,false,none,false,none,true,true,severe,heavy,many,none,none,none,none,severe,false,light
+none,false,none,normal,normal,none,true,severe,none,normal,none,false,false,normal,false,none,true,true,severe,heavy,many,none,none,none,none,none,false,light
+light,false,none,light,normal,none,true,heavy,none,normal,normal,false,false,light,false,none,true,true,severe,heavy,several,none,none,none,none,severe,false,light
+none,false,none,light,normal,none,true,severe,none,light,none,false,false,none,false,none,true,true,severe,heavy,many,none,none,none,none,none,false,light
+light,false,none,normal,normal,none,true,severe,none,normal,none,false,false,none,false,none,true,true,severe,heavy,many,none,none,none,none,none,false,normal
+none,false,none,light,normal,none,true,normal,none,light,light,false,false,none,false,none,true,true,severe,heavy,few,none,none,none,none,severe,false,light
+none,false,none,normal,normal,none,true,severe,none,normal,heavy,false,false,none,false,none,true,true,severe,heavy,many,none,none,none,none,severe,false,normal
+light,false,none,normal,normal,none,true,severe,none,light,none,false,false,none,false,none,true,true,severe,heavy,many,none,none,none,none,none,false,light
+none,false,none,light,none,none,true,none,none,normal,light,false,false,none,false,none,true,true,none,heavy,none,none,none,heavy,none,severe,false,light
+none,false,none,light,none,none,true,none,none,none,heavy,false,false,none,false,none,false,false,severe,heavy,none,none,none,none,none,none,false,light
+none,false,none,heavy,none,none,true,heavy,none,light,normal,false,false,none,false,none,false,false,light,heavy,none,none,none,none,none,none,false,light
+none,false,none,heavy,none,none,true,heavy,none,light,heavy,false,false,none,false,none,false,false,light,heavy,none,none,none,none,none,none,false,light
+light,false,none,light,none,none,true,light,none,light,light,false,false,none,false,none,true,true,severe,heavy,few,none,none,none,none,severe,false,light
+none,false,none,light,none,none,true,light,none,light,light,false,false,light,false,none,false,true,none,heavy,few,none,none,none,none,normal,false,none
+% 
+% 
+% 
